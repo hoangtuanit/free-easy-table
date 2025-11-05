@@ -1,3 +1,5 @@
+import { CellStyle } from './types';
+
 export const COLORS = {
   text: [
     { name: "Default text", color: "#d1d5db" },
@@ -23,4 +25,11 @@ export const COLORS = {
     { name: "Pink background", backgroundColor: "rgba(157, 23, 77, 0.5)", swatchColor: "#9d174d" },
     { name: "Red background", backgroundColor: "rgba(153, 27, 27, 0.5)", swatchColor: "#991b1b" },
   ],
+};
+
+export const DEFAULT_CELL_STYLE: CellStyle = {
+  color: '#d1d5db',
+  backgroundColor: 'transparent',
+  fontSize: 14,
+  fontWeight: 'normal',
 };

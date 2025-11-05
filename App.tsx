@@ -2,6 +2,7 @@ import React, { useState, useCallback, useRef } from 'react';
 import { TableData, Column, Cell, CellStyle } from './types';
 import Table from './components/Table';
 import { SaveIcon, LoadIcon } from './components/icons';
+import { DEFAULT_CELL_STYLE } from './constants';
 import './styles.css';
 
 const DEFAULT_COL_WIDTH = 200;
@@ -10,10 +11,7 @@ const DEFAULT_ROW_HEIGHT = 40;
 const createNewCell = (): Cell => ({
   id: crypto.randomUUID(),
   content: '',
-  color: '#d1d5db', // Default text color (text-gray-300)
-  backgroundColor: 'transparent',
-  fontSize: 14,
-  fontWeight: 'normal',
+  ...DEFAULT_CELL_STYLE,
 });
 
 const createInitialTable = (rows: number, cols: number): [TableData, Column[], number[]] => {
