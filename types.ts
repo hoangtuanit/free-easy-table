@@ -31,3 +31,32 @@ export type CellContextMenuData = {
 } | null;
 
 export type CellStyle = Omit<Cell, 'id' | 'content'>;
+
+export type MenuItem =
+  | {
+      type: 'item';
+      label: string;
+      icon?: React.ReactNode;
+      action?: () => void;
+      disabled?: boolean;
+    }
+  | {
+      type: 'submenu';
+      label: string;
+      icon?: React.ReactNode;
+      subMenu: MenuItem[];
+    }
+  | {
+      type: 'toggle';
+      label: string;
+      icon?: React.ReactNode;
+      checked: boolean;
+      action: () => void;
+    }
+  | {
+      type: 'custom';
+      content: React.ReactNode;
+  }
+  | {
+      type: 'divider';
+    };
