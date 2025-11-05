@@ -1,0 +1,7 @@
+{
+  "name": "Notion-like Table",
+  "description": "A dynamic, editable table component inspired by Notion's database functionality. Users can add/delete rows and columns, edit cells inline, and apply colors to columns.",
+  "requestFramePermissions": [
+    "clipboard-read"
+  ]
+}

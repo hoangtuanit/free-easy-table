@@ -1,0 +1,26 @@
+export const COLORS = {
+  text: [
+    { name: "Default text", color: "#d1d5db" },
+    { name: "Gray text", color: "#6b7281" },
+    { name: "Brown text", color: "#b45309" },
+    { name: "Orange text", color: "#f97316" },
+    { name: "Yellow text", color: "#eab308" },
+    { name: "Green text", color: "#22c55e" },
+    { name: "Blue text", color: "#3b82f6" },
+    { name: "Purple text", color: "#8b5cf6" },
+    { name: "Pink text", color: "#ec4899" },
+    { name: "Red text", color: "#ef4444" },
+  ],
+  background: [
+    { name: "Default background", backgroundColor: "transparent", swatchColor: "#1f2937" },
+    { name: "Gray background", backgroundColor: "rgba(55, 65, 81, 0.5)", swatchColor: "#374151" },
+    { name: "Brown background", backgroundColor: "rgba(146, 64, 14, 0.5)", swatchColor: "#92400e" },
+    { name: "Orange background", backgroundColor: "rgba(154, 52, 18, 0.5)", swatchColor: "#9a3412" },
+    { name: "Yellow background", backgroundColor: "rgba(133, 77, 14, 0.5)", swatchColor: "#854d0e" },
+    { name: "Green background", backgroundColor: "rgba(22, 101, 52, 0.5)", swatchColor: "#166534" },
+    { name: "Blue background", backgroundColor: "rgba(30, 64, 175, 0.5)", swatchColor: "#1e40af" },
+    { name: "Purple background", backgroundColor: "rgba(107, 33, 168, 0.5)", swatchColor: "#6b21a8" },
+    { name: "Pink background", backgroundColor: "rgba(157, 23, 77, 0.5)", swatchColor: "#9d174d" },
+    { name: "Red background", backgroundColor: "rgba(153, 27, 27, 0.5)", swatchColor: "#991b1b" },
+  ],
+};
